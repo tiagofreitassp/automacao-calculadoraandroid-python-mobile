@@ -10,7 +10,7 @@
  .Frameworks: Unittest, Appium, OS e Selenium (Instalar utilizando o PIP Python).
 
 2.Configuracoes:
- .O projeto foi criado no MacOS e testado tambem no Windows. Noa e necessario alterar nada.
+ .O projeto foi criado no MacOS e testado tambem no Windows. Nao e necessario alterar nada.
  .Os metodos para criar o driver Mobile estao na classe EmuladorDriver e MobileDriver
 
 3.Execucao:
