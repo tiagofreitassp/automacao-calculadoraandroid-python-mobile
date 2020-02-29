@@ -1,12 +1,12 @@
 import os
+from time import sleep
 from appium import webdriver
 
 class emuladorDriver():
     dir = '../evidencias/'
 
     def criarPastaEvidencia(self, nPasta):
-        try:
-            d = dir + nPasta
+            d = nPasta
             if os.path.exists(d) == True:
                 print("Diretório já existe")
                 os.rmdir(d)
@@ -17,10 +17,9 @@ class emuladorDriver():
                 print("Diretório não existe")
                 os.makedirs(d)
                 print('Diretório criado')
-        except:
-            print('Verifique se o diretório há arquivos.')
 
     def gerarScreenshot(self, nPasta, nEvidencia):
+        sleep(1)
         self.driver.get_screenshot_as_file(nPasta + "/" + nEvidencia + ".png")
 
     def criarDriver(self):
