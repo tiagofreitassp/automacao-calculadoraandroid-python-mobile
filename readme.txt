@@ -7,10 +7,10 @@
 1.Requisitos:
  .Python 3.7
  .PyCharm ou qualquer IDE/Bloco de Notas que suporte Python
+ .Frameworks: Unittest, Appium, OS e Selenium (Instalar utilizando o PIP Python).
 
 2.Configuracoes:
- .O projeto foi criado no MacOS, porem foi testado tambem para executar no Windows. Ja esta configurado para
-  executar no Windows.
+ .O projeto foi criado no MacOS e testado tambem no Windows. Noa e necessario alterar nada.
  .Os metodos para criar o driver Mobile estao na classe EmuladorDriver e MobileDriver
 
 3.Execucao:
