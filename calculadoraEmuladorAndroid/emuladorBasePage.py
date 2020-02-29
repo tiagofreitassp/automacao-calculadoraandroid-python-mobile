@@ -1,3 +1,7 @@
+from time import sleep
+
+from appium.webdriver.common.touch_action import TouchAction
+
 class BasePage():
     def clicar(self, tipoEl, el):
         if tipoEl == "ID" or tipoEl.__eq__("id"):
@@ -9,7 +13,8 @@ class BasePage():
         elif tipoEl == "CLASS" or tipoEl.__eq__("class"):
             self.driver.find_element_by_class_name(el).click()
 
-    def validarTexto(self,tipoEl,el, texto):
+    def validarTexto(self,tipoEl,el,texto):
+        sleep(1)
         if tipoEl == "ID" or tipoEl.__eq__("id"):
             txt = self.driver.find_element_by_id(el).text
             assert texto == txt
@@ -22,3 +27,10 @@ class BasePage():
         elif tipoEl == "CLASS" or tipoEl.__eq__("class"):
             txt = self.driver.find_element_by_class_name(el).text
             assert texto == txt
+        sleep(1)
+
+    def scrollDown(self):
+        sleep(1)
+        touch = TouchAction(self.driver)
+        touch.press(x=290, y=840).move_to(x=292, y=191).release().perform()
+        sleep(1)

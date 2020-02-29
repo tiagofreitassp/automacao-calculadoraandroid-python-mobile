@@ -1,22 +1,16 @@
 import unittest
 from appium import webdriver
-from calculadoraEmuladorAndroid import calculadoraEmuladorAndroidPage
+from calculadoraEmuladorAndroid import calculadoraEmuladorAndroidPage, emuladorDriver
 
+d = emuladorDriver.emuladorDriver
 p = calculadoraEmuladorAndroidPage.calculadoraAndroidPage
 
 class calculadoraAndroidTest(unittest.TestCase):
     def setUp(self):
-        desired_caps = {}
-        desired_caps['platformName'] = 'Android'
-        desired_caps['deviceName'] = 'emulator-5554'
-        desired_caps['automationName'] = 'uiautomator2'
-        desired_caps['appPackage'] = 'com.android.calculator2'
-        desired_caps['appActivity'] = 'com.android.calculator2.Calculator'
-        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-        self.driver.implicitly_wait(12)
+        d.criarDriver(self)
 
     def tearDown(self):
-        self.driver.quit()
+        d.fecharDriver(self)
 
     def test1_Soma(self):
         p.soma(self)

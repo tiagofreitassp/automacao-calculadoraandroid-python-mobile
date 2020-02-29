@@ -23,48 +23,54 @@ class calculadoraAndroidPage():
         p.clicar(self,"id",v.btnLimp)
 
     def subtracao(self):
-        self.driver.find_element_by_id(v.btnCinco).click()
-        self.driver.find_element_by_id(v.btnSete).click()
-        self.driver.find_element_by_id(v.btnNove).click()
+        p.clicar(self, "id", v.btnCinco)
+        p.clicar(self, "id", v.btnSete)
+        p.clicar(self, "id", v.btnNove)
 
-        self.driver.find_element_by_id(v.btnSub).click()
+        p.clicar(self,"id",v.btnSub)
 
-        self.driver.find_element_by_id(v.btnQuatro).click()
-        self.driver.find_element_by_id(v.btnCinco).click()
-        self.driver.find_element_by_id(v.btnSeis).click()
+        p.clicar(self, "id", v.btnQuatro)
+        p.clicar(self, "id", v.btnCinco)
+        p.clicar(self, "id", v.btnSeis)
 
-        self.driver.find_element_by_id(v.btnIgual).click()
-        txt = self.driver.find_element_by_id(v.txtResultado).text
-        assert "123" == txt
+        p.clicar(self, "id", v.btnIgual)
+
+        p.validarTexto(self,"id",v.txtResultado,"123")
         sleep(1)
-        self.driver.find_element_by_id(v.btnLimp).click()
+        p.clicar(self, "id", v.btnLimp)
 
     def multiplicao(self):
-        self.driver.find_element_by_id(v.btnTres).click()
-        self.driver.find_element_by_id(v.btnUm).click()
+        p.clicar(self, "id", v.btnTres)
+        p.clicar(self, "id", v.btnUm)
 
-        self.driver.find_element_by_id(v.btnMult).click()
+        p.clicar(self, "id", v.btnMult)
 
-        self.driver.find_element_by_id(v.btnUm).click()
-        self.driver.find_element_by_id(v.btnZero).click()
+        p.clicar(self, "id", v.btnUm)
+        p.clicar(self, "id", v.btnZero)
 
-        self.driver.find_element_by_id(v.btnIgual).click()
-        txt = self.driver.find_element_by_id(v.txtResultado).text
-        assert "310" == txt
+        p.clicar(self, "id", v.btnIgual)
+        p.validarTexto(self, "id", v.txtResultado, "310")
         sleep(1)
-        self.driver.find_element_by_id(v.btnLimp).click()
+        p.clicar(self, "id", v.btnLimp)
 
     def divisao(self):
-        self.driver.find_element_by_id(v.btnNove).click()
-        self.driver.find_element_by_id(v.btnZero).click()
-        self.driver.find_element_by_id(v.btnZero).click()
+        p.clicar(self, "id", v.btnNove)
+        p.clicar(self, "id", v.btnZero)
+        p.clicar(self, "id", v.btnZero)
 
-        self.driver.find_element_by_id(v.btnDiv).click()
+        p.clicar(self, "id", v.btnDiv)
 
-        self.driver.find_element_by_id(v.btnQuatro).click()
+        p.clicar(self, "id", v.btnZero)
 
-        self.driver.find_element_by_id(v.btnIgual).click()
-        txt = self.driver.find_element_by_id(v.txtResultado).text
-        assert "225" == txt
+        p.clicar(self, "id", v.btnIgual)
+
+        p.validarTexto(self,"id",v.txtResultado,"Impos. dividir por 0")
         sleep(1)
-        self.driver.find_element_by_id(v.btnLimp).click()
+        p.clicar(self, "id", v.btnDel)
+
+        p.clicar(self, "id", v.btnQuatro)
+
+        p.clicar(self, "id", v.btnIgual)
+
+        p.validarTexto(self, "id", v.txtResultado, "225")
+        p.clicar(self, "id", v.btnLimp)
