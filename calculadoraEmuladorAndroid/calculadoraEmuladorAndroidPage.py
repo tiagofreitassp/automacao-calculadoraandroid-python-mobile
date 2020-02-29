@@ -1,8 +1,10 @@
 from time import sleep
 from calculadoraEmuladorAndroid import emuladorAndroidVariables, emuladorBasePage
+from calculadoraEmuladorAndroid.emuladorDriver import emuladorDriver
 
 v = emuladorAndroidVariables
 p = emuladorBasePage.BasePage
+d = emuladorDriver
 
 class calculadoraAndroidPage():
     def soma(self):

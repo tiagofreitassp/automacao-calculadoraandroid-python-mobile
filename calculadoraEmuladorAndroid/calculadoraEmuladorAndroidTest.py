@@ -1,5 +1,4 @@
 import unittest
-from appium import webdriver
 from calculadoraEmuladorAndroid import calculadoraEmuladorAndroidPage, emuladorDriver
 
 d = emuladorDriver.emuladorDriver
