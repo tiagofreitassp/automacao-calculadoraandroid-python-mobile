@@ -15,7 +15,7 @@
 
 3.Execucao:
  .Abrir uma das classes ***Test.py no pyCharm
- .No caso para executar num smartphone, abra a classe Mobile Driver e altere o valor no campo "DeviceId"
+ .No caso para executar num smartphone, abra a classe Mobile Driver e altere o valor no campo "deviceName"
 
 4.Evidencias:
  .Apos a execucao as imagens de evidencias sao armazenadas na pasta evidencias.
