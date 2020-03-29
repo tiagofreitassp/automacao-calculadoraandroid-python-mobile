@@ -1,4 +1,4 @@
-import os
+import os, shutil
 from time import sleep
 from appium import webdriver
 
@@ -9,7 +9,8 @@ class emuladorDriver():
             d = nPasta
             if os.path.exists(d) == True:
                 print("Diretório já existe")
-                os.rmdir(d)
+                #os.rmdir(d)
+                shutil.rmtree(d)
                 print('Diretório apagado')
                 os.makedirs(d)
                 print('Diretório recriado')
