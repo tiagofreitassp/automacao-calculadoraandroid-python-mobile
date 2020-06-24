@@ -24,12 +24,14 @@ class calculadoraAndroidPage():
         p.clicar(self, "id", v.btnCinco)
         p.clicar(self, "id", v.btnSeis)
 
+        d.gerarScreenshot(self, dirSoma, "Ev1")
         p.clicar(self,"id",v.btnIgual)
 
-        d.gerarScreenshot(self,dirSoma,"Ev1")
+        d.gerarScreenshot(self,dirSoma,"Ev2")
         p.validarTexto(self,"id",v.txtResultado,"579")
         sleep(1)
         p.clicar(self,"id",v.btnLimp)
+        d.criarDocumentoDeEvidencia(self,dirSoma,"CT01","Cálculo Soma Android")
 
     def subtracao(self):
         d.criarPastaEvidencia(self, dirSubtracao)
@@ -43,12 +45,14 @@ class calculadoraAndroidPage():
         p.clicar(self, "id", v.btnCinco)
         p.clicar(self, "id", v.btnSeis)
 
+        d.gerarScreenshot(self, dirSubtracao, "Ev1")
         p.clicar(self, "id", v.btnIgual)
 
-        d.gerarScreenshot(self, dirSubtracao, "Ev1")
+        d.gerarScreenshot(self, dirSubtracao, "Ev2")
         p.validarTexto(self,"id",v.txtResultado,"123")
         sleep(1)
         p.clicar(self, "id", v.btnLimp)
+        d.criarDocumentoDeEvidencia(self, dirSubtracao,"CT02","Cálculo Subtracao Android")
 
     def multiplicao(self):
         d.criarPastaEvidencia(self, dirMultiplicacao)
@@ -60,12 +64,14 @@ class calculadoraAndroidPage():
         p.clicar(self, "id", v.btnUm)
         p.clicar(self, "id", v.btnZero)
 
+        d.gerarScreenshot(self, dirMultiplicacao, "Ev1")
         p.clicar(self, "id", v.btnIgual)
 
-        d.gerarScreenshot(self, dirMultiplicacao, "Ev1")
+        d.gerarScreenshot(self, dirMultiplicacao, "Ev2")
         p.validarTexto(self, "id", v.txtResultado, "310")
         sleep(1)
         p.clicar(self, "id", v.btnLimp)
+        d.criarDocumentoDeEvidencia(self, dirMultiplicacao,"CT03","Cálculo Multiplicacao Android")
 
     def divisao(self):
         d.criarPastaEvidencia(self, dirDivisao)
@@ -91,3 +97,4 @@ class calculadoraAndroidPage():
         d.gerarScreenshot(self, dirDivisao, "Ev2")
         p.validarTexto(self, "id", v.txtResultado, "225")
         p.clicar(self, "id", v.btnLimp)
+        d.criarDocumentoDeEvidencia(self, dirDivisao,"CT04","Cálculo Divisao Android")
