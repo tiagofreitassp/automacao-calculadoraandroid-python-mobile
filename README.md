@@ -4,8 +4,8 @@ Script de automacao para realizar calculos basicos na calculadora do Android usa
 ### Cobertura dos testes:  ###
 
 * Realizar calculos basicos na calculadora do Android no emulador.
-*
-Realizar calculos basicos na calculadora do Android no smartphone.
+
+* Realizar calculos basicos na calculadora do Android no smartphone.
 
 ## Tecnologias:
 * [Python 3.8](https://www.python.org/)
@@ -32,7 +32,7 @@ O projeto foi criado para executar no MacOS. Mas pode receber adaptacoes para ex
 Recomendado utilizar o PyCharm, mas pode usar o Eclipse IDE ou Visual Studio Code.
 
 ###  - Fluxo
-*Descricao: Este script ira executar uma compra online, seguindo o fluxo desde a escolha do produto ate a etapa de confirmacao da compra.
+*Descricao: Este script ira executar calculos basico como Soma, Subtracao, Multiplicacao e Divisao.
 
 ###  - Massas
 *Descricao: 
