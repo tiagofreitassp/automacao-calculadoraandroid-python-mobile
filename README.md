@@ -32,7 +32,7 @@ O projeto foi criado para executar no MacOS. Mas pode receber adaptacoes para ex
 Recomendado utilizar o PyCharm, mas pode usar o Eclipse IDE ou Visual Studio Code.
 
 ###  - Fluxo
-*Descricao: Este script ira executar calculos basico como Soma, Subtracao, Multiplicacao e Divisao.
+*Descricao: Este script ira executar calculos basicos como Soma, Subtracao, Multiplicacao e Divisao.
 
 ###  - Massas
 *Descricao: 
