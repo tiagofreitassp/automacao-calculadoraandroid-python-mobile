@@ -8,11 +8,12 @@ Script de automacao para realizar calculos basicos na calculadora do Android usa
 * Realizar calculos basicos na calculadora do Android no smartphone.
 
 ## Tecnologias:
-* [Python 3.8](https://www.python.org/)
+* [Python 3.8+](https://www.python.org/)
 * [Unittest](https://docs.python.org/3/library/unittest.html)
 * [Selenium](https://selenium-python.readthedocs.io/)
 * [Pycharm](https://www.jetbrains.com/pt-br/pycharm/)
 * [PyPI](https://pypi.org/project/selenium/)
+* [WebDriverAgent](https://github.com/appium/WebDriverAgent)
 
 ## Dependências:
 * Selenium
