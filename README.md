@@ -13,7 +13,6 @@ Script de automacao para realizar calculos basicos na calculadora do Android usa
 * [Selenium](https://selenium-python.readthedocs.io/)
 * [Pycharm](https://www.jetbrains.com/pt-br/pycharm/)
 * [PyPI](https://pypi.org/project/selenium/)
-* [WebDriverAgent](https://github.com/appium/WebDriverAgent)
 
 ## Dependências:
 * Selenium
