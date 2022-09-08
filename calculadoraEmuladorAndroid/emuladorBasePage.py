@@ -1,5 +1,5 @@
 from time import sleep
-
+from selenium.webdriver.common.by import By
 from appium.webdriver.common.touch_action import TouchAction
 
 class BasePage():
