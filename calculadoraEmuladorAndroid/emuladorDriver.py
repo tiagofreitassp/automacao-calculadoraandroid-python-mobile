@@ -1,8 +1,6 @@
 import os, shutil
 from time import sleep
 from appium import webdriver
-from docx import Document
-from docx.shared import Inches
 
 class emuladorDriver():
     dir = '../evidencias/'
@@ -27,17 +25,18 @@ class emuladorDriver():
 
     def criarDocumentoDeEvidencia(self, diretorioEvidencia,id ,nomeEvidencia):
         try:
+            from xml.dom.minidom import Document
             document = Document()
 
             document.add_heading('Evidências: Calculadora Android', 0)
             p = document.add_paragraph(nomeEvidencia)
 
             document.add_paragraph(id+'_Tela01')
-            document.add_picture(diretorioEvidencia + '/Ev1.png', width=Inches(4.14))
+            document.add_picture(diretorioEvidencia + '/Ev1.png', width=(4.14))
             #document.add_page_break()
 
             document.add_paragraph(id+'_Tela02')
-            document.add_picture(diretorioEvidencia + '/Ev2.png', width=Inches(4.14))
+            document.add_picture(diretorioEvidencia + '/Ev2.png', width=(4.14))
             #document.add_page_break()
 
             document.save(diretorioEvidencia + '/' + nomeEvidencia + '.docx')
