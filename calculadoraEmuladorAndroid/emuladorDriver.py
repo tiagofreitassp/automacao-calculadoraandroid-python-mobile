@@ -60,7 +60,7 @@ class emuladorDriver():
         desired_caps['automationName'] = 'uiautomator2'
         desired_caps['appPackage'] = 'com.android.calculator2'
         desired_caps['appActivity'] = 'com.android.calculator2.Calculator'
-        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+        self.driver = webdriver.Remote('http://127.0.0.1:4723', desired_caps)
         self.driver.implicitly_wait(15)
 
     def fecharDriver(self):

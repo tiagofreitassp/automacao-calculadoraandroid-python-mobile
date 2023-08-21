@@ -31,6 +31,8 @@ O projeto foi criado para executar no MacOS. Mas pode receber adaptacoes para ex
 
 Recomendado utilizar o PyCharm, mas pode usar o Eclipse IDE ou Visual Studio Code.
 
+Utilize a versão 2 do Appim, pois as anteriores foram depreciadas e não possuem suporte do Desenvolvedor.
+
 ###  - Fluxo
 *Descricao: Este script ira executar calculos basicos como Soma, Subtracao, Multiplicacao e Divisao.
 
