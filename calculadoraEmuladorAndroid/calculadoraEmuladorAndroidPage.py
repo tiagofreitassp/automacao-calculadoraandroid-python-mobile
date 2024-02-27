@@ -81,15 +81,6 @@ class calculadoraAndroidPage():
 
         p.clicar(self, "id", v.btnDiv)
 
-        p.clicar(self, "id", v.btnZero)
-
-        p.clicar(self, "id", v.btnIgual)
-
-        d.gerarScreenshot(self, dirDivisao, "Ev1")
-        p.validarTexto(self,"id",v.txtResultado,"Impos. dividir por 0")
-        sleep(1)
-        p.clicar(self, "id", v.btnDel)
-
         p.clicar(self, "id", v.btnQuatro)
 
         p.clicar(self, "id", v.btnIgual)

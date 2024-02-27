@@ -1,6 +1,7 @@
 import os, shutil
 from time import sleep
 from appium import webdriver
+from appium.options.common import AppiumOptions
 from docx import Document
 from docx.shared import Inches
 
@@ -54,13 +55,15 @@ class emuladorDriver():
             print("Não foi possivel criar o documento com as evidencias!")
 
     def criarDriver(self):
-        desired_caps = {}
-        desired_caps['platformName'] = 'Android'
-        desired_caps['deviceName'] = 'emulator-5554'
-        desired_caps['automationName'] = 'uiautomator2'
-        desired_caps['appPackage'] = 'com.android.calculator2'
-        desired_caps['appActivity'] = 'com.android.calculator2.Calculator'
-        self.driver = webdriver.Remote('http://127.0.0.1:4723', desired_caps)
+        desired_caps = {
+            "platformName": "Android",
+            "deviceName": "emulator-5554",
+            "automationName": "uiautomator2",
+            "appPackage": "com.android.calculator2",
+            "appActivity": "com.android.calculator2.Calculator"
+        }
+        option = AppiumOptions().load_capabilities(desired_caps)
+        self.driver = webdriver.Remote(command_executor=f"http://127.0.0.1:4723", options=option)
         self.driver.implicitly_wait(15)
 
     def fecharDriver(self):
